@@ -27,12 +27,12 @@ docker-compose up -d
 
 To run tests, you have two options.
 
-First, to run tests outside of the docker container, run
+First, to run tests outside of the docker container, use
 ```
 docker-compose run devgrid-api yarn test
 ```
 
-Second, to run tests inside of the docker container, run
+Second, to run tests inside of the docker container, use
 ```
 docker-compose up -d
 docker exec -it devgrid-api yarn test

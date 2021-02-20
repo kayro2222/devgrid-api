@@ -2,6 +2,7 @@
 const request = require("supertest");
 const express = require('express');
 const cors = require('cors');
+const client = require('../../services/redis');
 const routes = require('../../routes');
 const dotenv = require('dotenv');
 dotenv.config();
@@ -14,6 +15,7 @@ app.use(routes);
 const server = app.listen(3334);
 
 afterAll(() => {
+  client.flushall('ASYNC');
   server.close();
 });
 
