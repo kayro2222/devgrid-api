@@ -42,3 +42,4 @@ docker exec -it devgrid-api yarn test
 
 * [NodeJS](https://nodejs.org/)
 * [Docker](https://www.docker.com/)
+* [JEST](https://jestjs.io/)
