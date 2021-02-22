@@ -35,7 +35,8 @@ docker-compose run devgrid-api yarn test
 Second, to run tests inside of the docker container, use
 ```
 docker-compose up -d
-docker exec -it devgrid-api yarn test
+docker exec -it devgrid-api /bin/sh
+yarn test
 ```
 
 ## Built With
